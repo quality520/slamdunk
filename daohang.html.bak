@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style tyle="text/css">
+		*{margin:0;padding:0;list-style:none;text-decoration:none;}
+		a{color:#000;}
+		body{background:url(images/body.jpg);}
+		#con{position:relative;}
+		#con ul {width:502px;font-size:16px;font-weight:bold;height:40px;}
+		#con ul li{float:left;width:80px;height:40px;line-height:40px;background-color:#fff2d2;text-align:center;border-left:1px solid;border-right:1px solid;border-radius:5px;}
+		#con ul .on{background-color:#d9635f;}
+  </style>
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript">
+	$(function(){
+		$("#con ul li").click(function(){
+			$(this).addClass("on").siblings().removeClass("on");
+			$(".on").stop().animate({width:"100px"},300).siblings().stop().animate({width:"80px"},300);
+		})	
+
+		
+		
+	})
+  </script>
+ </head>
+ <body>
+  <div id="con">
+	<ul>
+		<li class="on"><a href="#" title="首页">首&nbsp;页</a></li>
+		<li><a href="#" title="动漫">动&nbsp;漫</a></li>
+		<li><a href="#" title="漫画">漫&nbsp;画</a></li>
+		<li><a href="#" title="图片">图&nbsp;片</a></li>
+		<li><a href="#" title="周边">周&nbsp;边</a></li>
+	</ul>
+  </div>
+ </body>
+</html>
