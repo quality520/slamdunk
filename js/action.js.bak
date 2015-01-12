@@ -39,5 +39,62 @@ $(function(){
 
 	$("#main").hover(function(){
 		clearInterval(oPlay);
+	},function(){
+		play();
+	})
+	
+
+	if($("html,body").scrollTop() < 500 ){//判断页面刚加载完成的时候
+		$("#up").hide();
+	}
+	
+	$(window).scroll(function(){//»ñÈ¡µ½windwoµÄscrollÊôÐÔ
+		if($(this).scrollTop() < 500){//ÅÐ¶ÏscrollTopµÄÖµÊÇ·ñÐ¡ÓÚ500
+			$("#up").hide();//ÊÇ£¬¾ÍÒþ²Ø
+		}
+		else{
+			$("#up").show();//·ñ£¬¾ÍÏÔÊ¾
+		}
+	})
+
+	$("#up li").click(function(){
+		$("html,body").animate({"scrollTop":"0"},500);
+	})
+
+
+
+	
+	
+	var index = 0;
+	$(".next").click(function(){
+		index ++;
+		if(index < 6){
+			if(!$(".box_img").is(":animated")){//如果.box_img不处于animated状态就执行下面代码
+			$(".box_img li").eq(index).fadeIn().siblings().hide();
+			}
+			if(index == 5){
+			   index = -1;
+				}
+			}
+		else{
+			index = -1;
+		}
+	})
+	$(".pre").click(function(){
+		index --;
+		if(!$(".box_img").is(":animated")){//如果.box_img不处于animated状态就执行下面代码
+		$(".box_img li").eq(index).show().siblings().hide();
+		}
+		
+		if(index == -1){
+			index = 5;
+		}
+	})
+	
+	$(".box_img").hover(function(){
+		$(".box_img span").fadeIn("fast");
+		//alert(index);
+	},function(){
+		$(".box_img span").hide();
 	})
 })
