@@ -66,8 +66,19 @@ body{background:url(../images/body.jpg) no-repeat top ,url(../images/ft.jpg) no-
 
 
 #box .box_main .box_right{width:310px;height:250px;background-color:#d9635f;float:right;border-radius:5px;}
+#box .box_main .box_right .box_left_head h3{float:left;width:70%;height:25px;line-height:25px;text-indent:10px;}
+#box .box_main .box_right .box_left_head a{color:#000;}
+#box .box_main .box_right .box_left_head em{float:right;width:30%;height:25px;line-height:25px;text-indent:10px;}
 
-#bottom{}
+
+
+#bottom{width:1000px;height:250px;margin:0 auto;border:1px solid #000;padding-top:3px;}
+#bottom .focus{width:302px;height:56px;margin:0 auto;border:1px solid #000;}
+#bottom .focus .focus_img{float:left;width:54px;height:56px;border-right:1px solid #000;}
+#bottom .focus ul li{float:left;border:none;width:56px;height:56px;border-radius:28px;background-color:#cbc6c6;display:block;margin:0 13px;}
+
+
+#bottom .link{}
 
 #up{width:50px;height:50px;position:fixed;bottom:50px;right:20px;z-index:999;}
 #up li{width:50px;height:50px;background-color:#d9635f;border-radius:25px;cursor:pointer;}

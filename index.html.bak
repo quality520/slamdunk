@@ -95,20 +95,40 @@
 							<li index="3"><a href="#"><img src="images/3.jpg" alt="赤木刚宪"/></a></li>
 							<li index="4"><a href="#"><img src="images/4.jpg" alt="三井寿"/></a></li>
 							<li index="5"><a href="#"><img src="images/5.jpg" alt="宫城良田"/></a></li>
-							<li index="6" ><a href="#"><img src="images/6.jpg" alt="木暮公延"/></a></li>
+							<li index="6"><a href="#"><img src="images/6.jpg" alt="木暮公延"/></a></li>
 						</ul>
 						<span class="pre box_img_button"></span>
 						<span class="next box_img_button"></span>
 					</div><!--box_img开始-->
-					
 				</div><!--box_middle结束-->
 				<div class="box_right"><!--box_right开始-->
-				
+					<div class="box_left_head"><!--box_left_head开始-->
+						<h3>樱木花道精彩进球</h3>
+						<a href=#><em>More >></em></a>
+					</div><!--box_left_head结束-->
+					<div class="box_video"><!--box_video开始-->
+						<embed src="video/1.swf" 
+							width="310" height="225" 
+							type="application/x-shockwave-flash"
+							autostart="false">
+						</embed>
+					</div><!--box_video结束-->
 				</div><!--box_right结束-->
 			</div><!--box_main开始-->
 		</div><!--box结束-->
 		<div id="bottom"><!--bottom开始-->
-		
+			<div class="focus"><!--focus开始-->
+				<img class="focus_img" src="images/focus.png" alt="关注我们"/>
+				<!--<h5>关注我们:</h5>-->
+				<ul>
+					<li><a href="#" title=""><img src="images/weibo.png"/></a></li>
+					<li><a href="#" title=""><img src="images/weixin_2.png"/></a></li>
+					<li><a href="#" title=""><img src="images/t_weibo_2.png"/></a></li>
+				</ul>
+			</div><!--focus结束-->
+			<div class="link"><!--link开始-->
+			
+			</div><!--link结束-->
 		</div><!--bottom结束-->
 		<div id="up"><!--up开始-->
 			<ul>
